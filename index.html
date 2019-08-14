@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="index.css" />
+  <link rel="" href="index.css" />
   <title>WAIT! calc</title>
 </head>
 
@@ -13,12 +13,13 @@
   <main>
     <h1>Waitstaff Calculator</h1>
 
+    
     <section>
-      <h2>Enter the Meal Details</h2>
+        <h2>Enter the Meal Details</h2>
       <article>
         <form id="meal-detail-form">
-          <label for="meal-price">Base Meal Price: $</label>
-          <input type="number" id="meal-price" name="meal-price">
+          <label for="price">Base Meal Price: $</label>
+          <input type="number" id="price" name="meal-price">
 
           <label for="tax">Tax Rate: %</label>
           <input type="number" id="tax" name="tax">
@@ -36,25 +37,26 @@
       <h2>Customer Charges</h2>
       <article>
         <p id="js-subtotal">Subtotal <span>0.00</span></p>
-        <p id="js-tip-total">Tip <span>0.00</span></p>
+        <p id="js-tip">Tip <span>0.00</span></p>
       </article>
     </section>
 
     <section>
       <h2>My Earnings Info</h2>
       <article>
-        <p>Tip Total: <span>0.00</span></p>
-        <p>Meal Count: <span>0.00</span></p>
-        <p>Average Tip Per Meal: <span>0.00</span></p>
+        <p id="js-tip-total">Tip Total: <span>0.00</span></p>
+        <p id="js-meal-count">Meal Count: <span>0.00</span></p>
+        <p id="js-avg-tip">Average Tip Per Meal: <span>0.00</span></p>
       </article>
     </section>
 
     <button class="js-reset">Reset</button>
   </main>
 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="script/main.js"></script>
 </body>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" />
-<script src="./main.js"/>
 
 </html>
